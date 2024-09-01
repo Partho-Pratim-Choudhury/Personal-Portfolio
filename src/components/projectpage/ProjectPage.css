@@ -1,0 +1,118 @@
+.project-page-container {
+  height: 100%;
+  padding: 5% 10%;
+}
+
+.project-page-container h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.leftside {
+  flex: 1;
+  margin-right: 30px;
+  text-align: left;
+}
+
+.leftside .content {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 26px;
+  line-height: normal;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 200;
+}
+
+.links {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.links #icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+
+.rightside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightside img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  margin-left: 30px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+}
+
+.rightside:hover{
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .project-page-container {
+    text-align: center;
+  }
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftside {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rightside img {
+    margin-left: 0;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 3rem;
+  }
+}
+
+.repo-icon:link,
+.repo-icon:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.repo-icon:hover {
+  color: #eea302;
+  text-decoration: none;
+}
+
+.repo-icon:active {
+  color: black;
+  text-decoration: none;
+}

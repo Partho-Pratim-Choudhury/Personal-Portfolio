@@ -1,0 +1,136 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.introduction {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.introduction h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.introduction .p1 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.introduction .p2 {
+  line-height: 1.6rem;
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.homepage-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  border: 0.5px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.s1 {
+  background-color: rgba(238, 163, 2, 1);
+}
+
+.s2 {
+  background-color: rgba(255, 59, 37, 1);
+}
+
+.s3 {
+  background-color: rgba(128, 216, 218, 1);
+}
+
+.s1:hover,
+.s2:hover,
+.s3:hover {
+  background-color: #fff;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 50px;
+  }
+
+  .image-container {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .image-container img {
+    max-width: 480px;
+    height: 480px;
+    margin: 40px;
+  }
+
+  .text-container {
+    flex: 1;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .introduction h1 {
+    font-size: 64px;
+  }
+
+  .home-link {
+    width: calc(11vw);
+    height: calc(11vw);
+    max-width: 140px;
+    max-height: 140px;
+    border-radius: 50%;
+    margin: 0;
+  }
+}
