@@ -33,7 +33,7 @@ export default function Homepage() {
             className="home-link s2"
             onClick={() =>
               window.open(
-                "./Resume_Partho_Pratim_Choudhury_2112003_CSE_NIT_Silchar.pdf"
+                "./Partho_Pratim_Choudhury_2112003_CSE_NIT_Silchar.pdf"
               )
             }
           >
