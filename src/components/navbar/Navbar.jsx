@@ -47,7 +47,7 @@ export default function Navbar() {
               className="nav-links"
               onClick={() => {
                 window.open(
-                  "./Partho_Pratim_Choudhury_2112003_CSE_NIT_Silchar.pdf"
+                  "./Partho_Pratim_Choudhury_2112003_NIT_Silchar.pdf"
                 );
                 closeMenu();
               }}
